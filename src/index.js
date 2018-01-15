@@ -1,7 +1,8 @@
 /* globals __DEVELOPMENT__ */
+/* global render */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, compose, applyMiddleware } from 'redux';
+import { createStore, compose, applyMiddleware, preloadedState } from 'redux';
 import { Provider } from 'react-redux';
 import { routerMiddleware } from 'react-router-redux';
 import reducer from 'redux/modules/reducer';
@@ -27,15 +28,15 @@ const middleware = [
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
-  reducer, /*preloadedState,*/ 
+  reducer, preloadedState,
   composeEnhancers(applyMiddleware(...middleware))
 );
 
-// if (__DEVELOPMENT__ && module.hot) {
-//    module.hot.accept('redux/modules/reducer', () => {
-//     store.replaceReducer(require('redux/modules/reducer'));
-//    });
-// }
+if (__DEVELOPMENT__ && module.hot) {
+   module.hot.accept('redux/modules/reducer', () => {
+    store.replaceReducer(require('redux/modules/reducer'));
+   });
+}
 
 scrollInitiate(store);
 loadTracks(store);
@@ -54,9 +55,9 @@ ReactDOM.render(
 )
 
 // Hot Module Replacement API
-// if (module.hot) {
-//   module.hot.accept('./containers/Root/Root', () => {
-//     const Root = require('./containers/Root/Root').default;
-//     render(Root);
-//   });
-// }
+if (module.hot) {
+  module.hot.accept('./containers/Root/Root', () => {
+    const Root = require('./containers/Root/Root').default;
+    render(Root);
+  });
+}

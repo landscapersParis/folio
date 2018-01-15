@@ -114,12 +114,13 @@ class LoadingPage extends PureComponent {
               {({ opacity, scale }) =>
                 <AbsoluteText
                   style={{
+                    color : socialMed2,
                     opacity,
                     transform: `scale(${scale})`
                   }}
                   right={'120px'}
                   top={'14vh'}
-                  style={{ color : socialMed2 }}>Keep the faith and make it happend</AbsoluteText>
+                  >Keep the faith and make it happend</AbsoluteText>
               }
             </Motion>
 
