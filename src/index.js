@@ -1,4 +1,3 @@
-/* globals __DEVELOPMENT__ */
 /* global render */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -32,11 +31,11 @@ const store = createStore(
   composeEnhancers(applyMiddleware(...middleware))
 );
 
-if (__DEVELOPMENT__ && module.hot) {
-   module.hot.accept('redux/modules/reducer', () => {
-    store.replaceReducer(require('redux/modules/reducer'));
-   });
-}
+// if (__DEVELOPMENT__ && module.hot) {
+//    module.hot.accept('redux/modules/reducer', () => {
+//     store.replaceReducer(require('redux/modules/reducer'));
+//    });
+// }
 
 scrollInitiate(store);
 loadTracks(store);

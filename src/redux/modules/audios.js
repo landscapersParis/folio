@@ -5,8 +5,8 @@ const UPDATE_CURRENT_TIME = 'audios/UPDATE_CURRENT_TIME';
 
 const tracks = [
   new Audio(require('assets/Pink - Try.mp3')),
-  new Audio(require('assets/Aloe Blacc - Real Slow.mp3')),
-  new Audio(require('assets/The Weekend - I Feel It Coming.mp3')),
+  new Audio(require('assets/Lazerhawk - Star Hustler.mp3')),
+  new Audio(require('assets/Thomas Barrandon - The Quiet Earth.mp3')),
   new Audio(require('assets/Avicii - Hey Brother.mp3')),
   new Audio(require('assets/vaiiho.mp3'))
 ];

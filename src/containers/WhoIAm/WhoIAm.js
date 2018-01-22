@@ -253,7 +253,7 @@ class WhoIAm extends Component {
                               </PlayButton>
                               <div>
                                 <p style={{ margin: '0 0 10px 0' }}>
-                                  Aloe Black - Real Slow
+                                  Lazerhawk - Star Hustler
                                 </p>
                                 <AudioLine>
                                   <span className="mainLine" style={{ width: `${currentTime / duration * 100}%` }}></span>
@@ -288,7 +288,7 @@ class WhoIAm extends Component {
                               </PlayButton>
                               <div>
                                 <p style={{ margin: '0 0 10px 0' }}>
-                                  The Weekend - I Feel It Comin
+                                  Thomas Barrandon - The Quiet Earth
                                 </p>
                                 <AudioLine>
                                   <span className="mainLine" style={{ width: `${currentTime / duration * 100}%` }}></span>

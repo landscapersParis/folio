@@ -2,6 +2,7 @@
   "name": "LPFolio",
   "version": "0.1.0",
   "private": false,
+  "homepage": "http://landscapersparis.github.io/folio",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
     "babel-core": "6.22.1",
