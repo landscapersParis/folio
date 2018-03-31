@@ -9,7 +9,7 @@ class NavMenu extends Component {
         <StyledLink to={'/pride'}>Pride</StyledLink>
         <StyledLink to={'/knowhow'}>Know How</StyledLink>
         <StyledLink to={'/whoiam'}>Who I Am</StyledLink>
-        <StyledA href={'https://res.cloudinary.com/provideup/image/upload/f_pdf/v1/provider/usgit3hgdpqyplhorsl0.pdf'}>Resume</StyledA>
+        <StyledLink to={'/resume'}>Resume</StyledA>
       </Container>
     );
   }
