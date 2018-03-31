@@ -159,7 +159,7 @@ class Menu extends Component {
                 <h1>
                   <A
                   style={{color: ice}}
-                    href={'https://res.cloudinary.com/provideup/image/upload/f_pdf/v1/provider/usgit3hgdpqyplhorsl0.pdf'}
+		     onClick={() => goTo("/resume")}
                   >
                     Resume
                   </A>
