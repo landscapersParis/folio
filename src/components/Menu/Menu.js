@@ -159,7 +159,7 @@ class Menu extends Component {
                 <h1>
                   <A
                   style={{color: ice}}
-                    href={'https://docs.google.com/viewer?url=https%3A%2F%2Fres.cloudinary.com%2Fprovideup%2Fimage%2Fupload%2Ff_pdf%2Fv1%2Fprovider%2Ftkus29irgsgpxr3elsni.pdf'}
+                    href={'https://res.cloudinary.com/provideup/image/upload/f_pdf/v1/provider/usgit3hgdpqyplhorsl0.pdf'}
                   >
                     Resume
                   </A>
