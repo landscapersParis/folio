@@ -7,7 +7,6 @@ import { reducer as nextArrowReducer } from 'components/NextArrow/NextArrow';
 import { reducer as previousArrowReducer } from 'components/PreviousArrow/PreviousArrow';
 import { reducer as prideReducer } from 'containers/Pride/Pride';
 import { reducer as whoiamReducer } from 'containers/WhoIAm/WhoIAm';
-import { reducer as resumeReducer } from 'container/Asset/Resume.pdf';
 import { reducer as scrollReducer } from 'scroll';
 import audiosReducer from './audios';
 import loadingStatus from './loadingStatus';
@@ -25,6 +24,5 @@ export default combineReducers({
   nextArrow: nextArrowReducer,
   previousArrow: previousArrowReducer,
   pride: prideReducer,
-  whoiam: whoiamReducer,
-  resume: resumeReducer,
+  whoiam: whoiamReducer
 });

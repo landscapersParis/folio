@@ -139,7 +139,6 @@ class Menu extends Component {
                 <h1>
                   <A
                   style={{color: socialMed2}}
-                    onClick={() => goTo("/knowhow")}
                   >
                     Know How
                   </A>
@@ -159,7 +158,7 @@ class Menu extends Component {
                 <h1>
                   <A
                   style={{color: ice}}
-		     onClick={() => goTo("/resume")}
+		              href={"https://res.cloudinary.com/provideup/image/upload/f_pdf/v1/provider/usgit3hgdpqyplhorsl0.pdf"}
                   >
                     Resume
                   </A>
